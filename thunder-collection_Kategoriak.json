@@ -1,0 +1,85 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Kategoriak",
+    "dateExported": "2023-05-31T11:53:44.144Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4e7b5c31-2803-4423-a281-62681ec231b9",
+            "colId": "9092e1bb-8db9-43d9-a07a-5a1398143815",
+            "containerId": "",
+            "name": "localhost:8000/kategoriaks",
+            "url": "localhost:8000/kategoriaks",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-31T11:49:00.293Z",
+            "modified": "2023-05-31T11:52:11.890Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "kategorianev",
+                    "value": "Természetvédelem",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                }
+            ]
+        },
+        {
+            "_id": "e46f66b8-01b1-44ce-bf43-ea211d75e50b",
+            "colId": "9092e1bb-8db9-43d9-a07a-5a1398143815",
+            "containerId": "",
+            "name": "localhost:8000/tesztek",
+            "url": "localhost:8000/tesztek",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-31T11:51:16.552Z",
+            "modified": "2023-05-31T11:52:18.123Z",
+            "headers": [],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                }
+            ]
+        },
+        {
+            "_id": "52c59e49-7a92-4a0f-bde3-23847b143035",
+            "colId": "9092e1bb-8db9-43d9-a07a-5a1398143815",
+            "containerId": "",
+            "name": "localhost:8000/tesztek/kategoria/?",
+            "url": "localhost:8000/tesztek/kategoria/3",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-05-31T11:52:41.264Z",
+            "modified": "2023-05-31T11:52:57.255Z",
+            "headers": [],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                }
+            ]
+        }
+    ]
+}
