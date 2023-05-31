@@ -10,28 +10,28 @@ class TesztController extends Controller
 {
     public function index()
     {
-        $teszts =  Teszt::all();
-        return $teszts;
+        $tesztek =  Teszt::all();
+        return $tesztek;
     }
 
     public function show($id)
     {
-        $teszts = Teszt::find($id);
-        return $teszts;
+        $tesztek = Teszt::find($id);
+        return $tesztek;
     }
     
     public function store(Request $request)
     {
-        $teszts = new Teszt();
-        $teszts->kerdes = $request->kerdes;
-        $teszts->v1 = $request->v1;
-        $teszts->v2 = $request->v2;
-        $teszts->v3 = $request->v3;
-        $teszts->v4 = $request->v4;
-        $teszts->helyes = $request->helyes;
-        $teszts->kategoriaId = $request->kategoriaId;
-        $teszts->timestamps = $request->timestamps;
-        $teszts->save();
+        $tesztek = new Teszt();
+        $tesztek->kerdes = $request->kerdes;
+        $tesztek->v1 = $request->v1;
+        $tesztek->v2 = $request->v2;
+        $tesztek->v3 = $request->v3;
+        $tesztek->v4 = $request->v4;
+        $tesztek->helyes = $request->helyes;
+        $tesztek->kategoriaId = $request->kategoriaId;
+        $tesztek->timestamps = $request->timestamps;
+        $tesztek->save();
     }
 
     public function update(Request $request, $id)

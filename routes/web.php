@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\KategoriaController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TesztController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +17,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/tesztek', [TesztController::class, 'index']);
+Route::get('/tesztek/kategoria/{id}', [TesztController::class, 'show']);
+
+Route::get('/kategoriaks', [KategoriaController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
