@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string("v3");
             $table->string("v4");
             $table->string("helyes");
-            $table->foreignId("kategoriaId")->references("id")->on("kategoria");
+            $table->foreignId("kategoriaId")->references("id")->on("kategorias");
             $table->timestamps();
         });
 
