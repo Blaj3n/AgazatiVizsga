@@ -13,4 +13,4 @@ class KategoriasView{
     }
 }
 
-export default KategoriasView
+export default KategoriasView;
