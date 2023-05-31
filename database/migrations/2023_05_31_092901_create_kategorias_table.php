@@ -18,11 +18,11 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Kategoria::create(['kategorianev'=>"Természetvédelem"]);
-        Kategoria::create(['kategorianev'=>"Történelem"]);
-        Kategoria::create(['kategorianev'=>"Matematika"]);
-        Kategoria::create(['kategorianev'=>"Földrajz"]);
-        Kategoria::create(['kategorianev'=>"Biológia"]);
+        Kategoria::create(['kategorianev' => "Természetvédelem"]);
+        Kategoria::create(['kategorianev' => "Történelem"]);
+        Kategoria::create(['kategorianev' => "Matematika"]);
+        Kategoria::create(['kategorianev' => "Földrajz"]);
+        Kategoria::create(['kategorianev' => "Biológia"]);
     }
 
     /**

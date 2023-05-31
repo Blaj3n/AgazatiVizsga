@@ -20,13 +20,13 @@ return new class extends Migration
             $table->string("v3");
             $table->string("v4");
             $table->string("helyes");
-            $table->id("kategoriaId")->references("id")->on("kategoria");
+            $table->foreignId("kategoriaId")->references("id")->on("kategoria");
             $table->timestamps();
-
-            Teszt::create(['kerdes'=>"A papírt milyen színű kukába gyűjtjük?",'v1'=>"kék",'v2'=>"piros",'v3'=>"szürke",'v4'=>"sárga",'helyes'=>"v1",'kategoriaId'=>1]);
-            Teszt::create(['kerdes'=>"Melyek komposztálhatóak?",'v1'=>"zöldség - gyümölcs maradék, tojáshéj",'v2'=>"nagy ágak, fatörzsek, diófalevél",'v3'=>"fém, műanyag, vegyszeres dolgok",'v4'=>"ruhanemű, törlőruha, egyéb textilek",'helyes'=>"v1",'kategoriaId'=>1]);
-            Teszt::create(['kerdes'=>"Fogmosásnál...",'v1'=>"elzárom a csapot, amikor épp a fogamat sikálom és nem kell víz",'v2'=>"nem zárom el a csapot, amíg a fogamat mosom, hogy lemossa a lehulló fogkrém habot, a mosdókagylóból",'v3'=>"kitekerem a csapot teljesen, mert miért ne",'v4'=>"csak akkor zárom el a csapot, amikor végeztema  fogmosással",'helyes'=>"v2",'kategoriaId'=>1]);
         });
+
+        Teszt::create(['kerdes' => "A papírt milyen színű kukába gyűjtjük?", 'v1' => "kék", 'v2' => "piros", 'v3' => "szürke", 'v4' => "sárga", 'helyes' => "v1", 'kategoriaId' => 1]);
+        Teszt::create(['kerdes' => "Melyek komposztálhatóak?", 'v1' => "zöldség - gyümölcs maradék, tojáshéj", 'v2' => "nagy ágak, fatörzsek, diófalevél", 'v3' => "fém, műanyag, vegyszeres dolgok", 'v4' => "ruhanemű, törlőruha, egyéb textilek", 'helyes' => "v1", 'kategoriaId' => 1]);
+        Teszt::create(['kerdes' => "Fogmosásnál...", 'v1' => "elzárom a csapot, amikor épp a fogamat sikálom és nem kell víz", 'v2' => "nem zárom el a csapot, amíg a fogamat mosom, hogy lemossa a lehulló fogkrém habot, a mosdókagylóból", 'v3' => "kitekerem a csapot teljesen, mert miért ne", 'v4' => "csak akkor zárom el a csapot, amikor végeztema  fogmosással", 'helyes' => "v2", 'kategoriaId' => 1]);
     }
 
     /**
